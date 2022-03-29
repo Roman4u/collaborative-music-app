@@ -7,7 +7,7 @@ from .models import Room
 # 
 
 
-class RoomView(generics.CreateAPIView):
+class RoomView(generics.ListAPIView):
     # will return all of the Room objects
     queryset = Room.objects.all()
     # RoomSerializer converts the db into a JSON object from .models file
