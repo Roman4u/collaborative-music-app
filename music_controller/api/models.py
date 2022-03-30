@@ -4,6 +4,7 @@ from django.db import models
 import string
 import random
 
+# function 
 def generate_unique_code():
     length = 6
     while True:
